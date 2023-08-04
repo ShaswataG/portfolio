@@ -11,83 +11,54 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
-    <style>
-        /* body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        } */
-        /* body {
-            background-color: black;
-            color: white;
-        } */
-
-        h1 {
-            color: white;
-        }
-
-        .nav-pills .nav-link.active{
-            background-color:#61677A;
-        }
-    </style>
+    <link rel="stylesheet" href="css/portfolio.css" />
 </head>
 
 <body>
-    <div class="d-flex flex-row container-fluid p-0">
-        <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 100%; position: fixed; display: inline; background-color: black;">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none gap-3 C ">
-                <img src="images/Portfolio logo.png" height="50px" style="border-radius: 50%;"/>
-                <span class="fs-4">Shaswata</span>
-            </a>
-            <hr />
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link text-white" aria-current="page">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#home"></use>
-                        </svg>
-                        About Me
-                    </a>
-                </li>
-                <li>
-                    <a href="#skills" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Skills
-                    </a>
-                </li>
-                <li>
-                    <a href="#projects" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#table"></use>
-                        </svg>
-                        Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#people-circle"></use>
-                        </svg>
-                        Contact Me
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="d-flex container-fluid p-0">
+        <div class="row">
+            <aside class="sidebar d-flex flex-column flex-shrink-0 p-3 col-2">
+                <a href="index.html" class="d-flex align-items-center text-white text-decoration-none gap-3">
+                    <img src="images/Portfolio logo.png" height="50px" style="border-radius: 50%;" />
+                    <span class="fs-4 content-header">Shaswata</span>
+                </a>
+                <hr />
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#about" style="display: flex;" class="nav-link text-white" aria-current="page">
+                            <img src="images/person-vcard-fill.svg" height="30px"/>
+                            <span class="content-header">&nbsp;&nbsp;About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" style="display: flex;" class="nav-link text-white">
+                            <img src="images/tools.svg" height="25px" />
+                            <span class="content-header">&nbsp;&nbsp;&nbsp;Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" style="display: flex;" class="nav-link text-white">
+                            <img src="images/project-icon.svg" height="30px" />
+                            <span class="content-header">&nbsp;&nbsp;Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" style="display: flex;" class="nav-link text-white">
+                            <img src="images/contact.svg" height="30px"/>
+                            <span class="content-header">&nbsp;&nbsp;Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
 
-        <main class="container text-bg-dark text-white" data-bs-spy="scroll" style="margin-right: 0px;">
-
-            <section id="about">
-                <div class="container col-xxl-8 px-4 py-5">
-                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div class="col-10 col-sm-8 col-lg-6">
-                            <img src="./images/Profile pic.png" style="float: right;" alt="Bootstrap Themes" width="200" height="200" />
+            <main class="content text-bg-dark text-white col-10 offset-2" data-bs-spy="scroll">
+                <section id="about">
+                    <div class="flex-lg-row-reverse align-items-center">
+                        <div class="col-10 col-sm-8 col-lg-6" style="float: right; padding-top: 50px;">
+                            <img src="./images/Profile pic.png" alt="Bootstrap Themes" width="300" height="300" />
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold lh-1 mb-3">
-                                About Me
-                            </h1>
+                            <h1>About</h1>
                             <p class="lead">
                                 Welcome to my portfolio! I am a passionate and enthusiastic
                                 beginner web developer currently pursuing a degree in Computer
@@ -114,142 +85,133 @@
                             </p>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="skills">
-                <div class="container col-xxl-8">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Skills</h1>
-                    <h2>Technical Skills</h2>
-                    <span class="badge text-bg-secondary">Python</span>
-                    <span class="badge text-bg-secondary">HTML</span>
-                    <span class="badge text-bg-secondary">CSS</span>
-                    <span class="badge text-bg-secondary">Bootstrap</span>
-                    <span class="badge text-bg-secondary">Javascript</span>
-                    <span class="badge text-bg-secondary">C</span>
-                    <span class="badge text-bg-secondary">Java</span>
-                    <span class="badge text-bg-secondary">C++</span>
-
-                    <br />
-                    <br />
-
-                    <h2>Soft Skills</h2>
-                    <span class="badge text-bg-secondary">Communication</span>
-                    <span class="badge text-bg-secondary">Leadership</span>
-                    <span class="badge text-bg-secondary">Teamwork</span>
-                    <span class="badge text-bg-secondary">Time Management</span>
-                </div>
-
-                </p>
-            </section>
-
-            <br />
-            <br />
-            <br />
-
-            <section id="projects">
-                <div class="container col-xxl-8">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Projects</h1>
-                    <br />
-                    <div style="display: flex; flex-direction: row; gap: 10px;" >
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/Tindog.png" class="card-img-top" alt="...">
-                            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
-                              <h5 class="card-title">Tindog Website</h5>
-                              <p class="card-text">I have made a dating website for dogs so that they can meet new and interesting dogs.</p>
-                              <a href="https://shaswatag.github.io/Tindog1/" class="btn btn-secondary">Check it out</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/movie-ranking-project.png" class="card-img-top" alt="...">
-                            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
-                              <h5 class="card-title">Movie Ranking Website</h5>
-                              <p class="card-text">I have listed down three of my most favourite movies of all time.</p>
-                              <a href="#" class="btn btn-secondary">Check it out</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/birthday-invite-project.png" class="card-img-top" alt="...">
-                            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
-                              <h5 class="card-title">Birthday Invite Website</h5>
-                              <p class="card-text">It's an invitation for my birthday to all my friends and family.</p>
-                              <a href="#" class="btn btn-secondary">Check it out</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/Motivation meme project.png" class="card-img-top" alt="...">
-                            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
-                              <h5 class="card-title">Motivation Meme Website</h5>
-                              <p class="card-text">It's just a meme</p>
-                              <a href="#" class="btn btn-secondary">Check it out</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <br />
-            <br />
-            <br />
-
-            <section id="contact">
-                <div class="container col-xxl-8">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Contact Me</h1>
+                <section id="skills">
                     <div>
+                        <h1>Skills</h1>
+
+                        <h2>Technical Skills</h2>
+                        <span class="badge text-bg-secondary">Python</span>
+                        <span class="badge text-bg-secondary">HTML</span>
+                        <span class="badge text-bg-secondary">CSS</span>
+                        <span class="badge text-bg-secondary">Bootstrap</span>
+                        <span class="badge text-bg-secondary">Javascript</span>
+                        <span class="badge text-bg-secondary">C</span>
+                        <span class="badge text-bg-secondary">Java</span>
+                        <span class="badge text-bg-secondary">C++</span>
+
                         <br />
-                        <ul class="nav col-md-12 justify-content-start list-unstyled d-flex">
-                            <li class="ms-3">
-                                <a class="text-body-secondary" href="#">
-                                    <img src="images/linkedin.svg" title="LinkedIn" height="30px"/>
-                                </a>
-                            </li>
-                            <li class="ms-3">
-                                <a target="_blank" class="text-body-secondary" href="https://github.com/ShaswataG">
-                                    <img src="images/github.svg" title="GitHub" height="30px"/>
-                                </a>
-                            </li>
-                            <li class="ms-3">
-                                <a target="_blank" class="text-body-secondary" href="https://instagram.com/shaswat098?utm_source=qr&igshid=MzNINGNkZWQ4Mg%3D%3D">
-                                    <img src="images/instagram.svg" title="Instagram" height="30px" />
-                                </a>
-                            </li>
-                            <li class="ms-3">
-                                <a class="text-body-secondary" href="https://www.hackerrank.com/gshaswata?hr_r=1">
-                                    <img src="images/hackerrank.svg" title="HackerRank" height="50px" style="padding-bottom: 17px;"/>
-                                </a>
-                            </li>
-                            <li class="ms-3">
-                                <a class="text-body-secondary" href="https://auth.geeksforgeeks.org/user/gshaswfusu">
-                                    <img src="images/geeks-for-geeks.svg" title="GeeksforGeeks" height="20px"/>
-                                </a>
-                            </li>
-                        </ul>
                         <br />
-                        <p>Phone no.: 1234567890</p>
-    
+
+                        <h2>Soft Skills</h2>
+                        <span class="badge text-bg-secondary">Communication</span>
+                        <span class="badge text-bg-secondary">Leadership</span>
+                        <span class="badge text-bg-secondary">Teamwork</span>
+                        <span class="badge text-bg-secondary">Time Management</span>
                     </div>
-                </div>
-                
-                
-            </section>
+                </section>
 
-            <br />
-            <br />
+                <section id="projects">
+                    <div>
+                        <h1>Projects</h1>
+                        <div class="row gap-2">
+                            <div class="card col-md-4 col-8">
+                                <img src="images/Tindog.png" class="card-img-top" alt="...">
+                                <div class="card-body"
+                                    style="display: flex; flex-direction: column; justify-content: space-between;">
+                                    <h5 class="card-title">Tindog Website</h5>
+                                    <p class="card-text">I have made a dating website for dogs so that they can meet new
+                                        and interesting dogs.</p>
+                                    <a href="https://shaswatag.github.io/Tindog1/" class="btn btn-secondary">Check it
+                                        out</a>
+                                </div>
+                            </div>
+                            <div class="card col-md-4 col-8">
+                                <img src="images/movie-ranking-project.png" class="card-img-top" alt="...">
+                                <div class="card-body"
+                                    style="display: flex; flex-direction: column; justify-content: space-between;">
+                                    <h5 class="card-title">Movie Ranking Website</h5>
+                                    <p class="card-text">I have listed down three of my most favourite movies of all
+                                        time.</p>
+                                    <a href="#" class="btn btn-secondary">Check it out</a>
+                                </div>
+                            </div>
+                            <div class="card col-md-4 col-8">
+                                <img src="images/birthday-invite-project.png" class="card-img-top" alt="...">
+                                <div class="card-body"
+                                    style="display: flex; flex-direction: column; justify-content: space-between;">
+                                    <h5 class="card-title">Birthday Invite Website</h5>
+                                    <p class="card-text">It's an invitation for my birthday to all my friends and
+                                        family.</p>
+                                    <a href="#" class="btn btn-secondary">Check it out</a>
+                                </div>
+                            </div>
+                            <div class="card col-md-4 col-8">
+                                <img src="images/Motivation meme project.png" class="card-img-top" alt="...">
+                                <div class="card-body"
+                                    style="display: flex; flex-direction: column; justify-content: space-between;">
+                                    <h5 class="card-title">Motivation Meme Website</h5>
+                                    <p class="card-text">It's just a meme</p>
+                                    <a href="#" class="btn btn-secondary">Check it out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <footer class="container col-8"class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-md-12 d-flex align-items-center">
-                    <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                        <svg class="bi" width="30" height="24">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a> -->
-                    <span class="mb-3 mb-md-0 text-body-secondary">© Shaswata Gogoi</span>
-                </div>
-            </footer>
+                <section id="contact">
+                    <div>
+                        <h1>Contact</h1>
+                        <div>
+                            <ul class="nav col-md-12 justify-content-start list-unstyled d-flex gap-3">
+                                <li>
+                                    <a class="text-body-secondary" href="#">
+                                        <img src="images/linkedin.svg" title="LinkedIn" height="26px" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-body-secondary" href="#">
+                                        <img src="images/envelope-at-fill.svg" title="Mail" height="30px" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="text-body-secondary" href="https://github.com/ShaswataG">
+                                        <img src="images/github.svg" title="GitHub" height="28px" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="text-body-secondary"
+                                        href="https://instagram.com/shaswat098?utm_source=qr&igshid=MzNINGNkZWQ4Mg%3D%3D">
+                                        <img src="images/instagram.svg" title="Instagram" height="27px" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-body-secondary" href="https://www.hackerrank.com/gshaswata?hr_r=1">
+                                        <img src="images/hackerrank.svg" title="HackerRank" height="60px" style="padding-bottom: 30px;" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-body-secondary"
+                                        href="https://auth.geeksforgeeks.org/user/gshaswfusu">
+                                        <img src="images/geeks-for-geeks.svg" title="GeeksforGeeks" height="20px" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <p><img id="telephone-icon" src="images/telephone.svg" height="15" />Mobile: +91-1234567890</p>
+                        </div>
+                    </div>
+                </section>
 
-        </main>
+                <footer class="container col-8"
+                    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-12 d-flex align-items-center">
+                        <span class="mb-3 mb-md-0 text-body-secondary">© Shaswata Gogoi</span>
+                    </div>
+                </footer>
+            </main>
+        </div>
     </div>
-
 </body>
 
 </html>
