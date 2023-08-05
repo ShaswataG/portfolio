@@ -25,10 +25,29 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 10vh;
-    padding: 5vh 5vw;
+    padding-left: 0%;
+    /* padding: 5vh 5vw; */
+    padding-bottom: 0%;
     background-image: url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=1060&t=st=1691206526~exp=1691207126~hmac=53bf3137f86c32ccb539b26a534677b8986ecd7428c4ebc9b130af0b9b393f79");
+    background-size: 100% 100%;
 }
 
+.content-except-footer {
+    padding: 5vh 5vw;
+}
+
+.project-container {
+    width: 70vw;
+    /* height: 300; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    width: 100%;
+}
 .nav-pills .nav-link.active {
     background-color: #61677A;
 }
@@ -49,4 +68,22 @@ h2 {
         height: 150px;
     }
 
+    .project-container {
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 1200px) and (min-width: 680px) {
+    .project-container {
+        width: 60vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
 }
