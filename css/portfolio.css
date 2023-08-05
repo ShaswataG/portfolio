@@ -12,33 +12,42 @@ h2 {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 0;
 }
 
 .profile-pic {
     float: right;
     padding-top: 50px;
-    width:"300px";
+    width: "300px";
     height: "300px";
+}
+
+.code-profiles {
+    position: fixed;
+    top:0;
+    right: 0;
+    padding-right: 2vw;
+    flex-direction: row-reverse;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     gap: 10vh;
-    padding-left: 0%;
-    /* padding: 5vh 5vw; */
-    padding-bottom: 0%;
+    padding: 8vw 5vw;
     background-image: url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=1060&t=st=1691206526~exp=1691207126~hmac=53bf3137f86c32ccb539b26a534677b8986ecd7428c4ebc9b130af0b9b393f79");
     background-size: 100% 100%;
 }
 
-.content-except-footer {
-    padding: 5vh 5vw;
+.title {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-container {
     width: 70vw;
-    /* height: 300; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -48,6 +57,7 @@ h2 {
 .card {
     width: 100%;
 }
+
 .nav-pills .nav-link.active {
     background-color: #61677A;
 }
@@ -57,8 +67,20 @@ h2 {
     margin-bottom: 3px;
 }
 
-@media (max-width: 680px) {
-    
+.sidebar > ul > li > a {
+    display: flex;
+}
+
+@media (max-width: 838px) {
+
+    .sidebar > ul > li > a {
+        justify-content: center;
+    }
+
+    .sidebar > a {
+        justify-content: center;
+    }
+
     .content-header {
         display: none
     }
@@ -86,4 +108,12 @@ h2 {
         grid-template-rows: 1fr 1fr;
         gap: 15px;
     }
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
 }
