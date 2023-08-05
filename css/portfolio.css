@@ -14,11 +14,19 @@ h2 {
     left: 0;
 }
 
+.profile-pic {
+    float: right;
+    padding-top: 50px;
+    width:"300px";
+    height: "300px";
+}
+
 .content {
     display: flex;
     flex-direction: column;
     gap: 10vh;
     padding: 5vh 5vw;
+    background-image: url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=1060&t=st=1691206526~exp=1691207126~hmac=53bf3137f86c32ccb539b26a534677b8986ecd7428c4ebc9b130af0b9b393f79");
 }
 
 .nav-pills .nav-link.active {
@@ -31,7 +39,14 @@ h2 {
 }
 
 @media (max-width: 680px) {
+    
     .content-header {
         display: none
     }
+
+    .profile-pic > img {
+        width: 150px;
+        height: 150px;
+    }
+
 }
