@@ -24,7 +24,7 @@ h2 {
 
 .code-profiles {
     position: fixed;
-    top:0;
+    top: 0;
     right: 0;
     padding-right: 2vw;
     flex-direction: row-reverse;
@@ -35,8 +35,8 @@ h2 {
     flex-direction: column;
     gap: 10vh;
     padding: 8vw 8vw;
-    background-image: url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=1060&t=st=1691206526~exp=1691207126~hmac=53bf3137f86c32ccb539b26a534677b8986ecd7428c4ebc9b130af0b9b393f79");
-    background-size: 100% 100%;
+    background-image: url("../images/endless-constellation.svg");
+    /* background by SVGBackgrounds.com */
 }
 
 .title {
@@ -67,23 +67,23 @@ h2 {
     margin-bottom: 3px;
 }
 
-.sidebar > ul > li > a {
+.sidebar>ul>li>a {
     display: flex;
 }
 
 @media (max-width: 838px) {
 
-    .sidebar > ul > li > a {
+    .sidebar>ul>li>a {
         justify-content: center;
     }
 
-    .sidebar > a {
+    .sidebar>a {
         justify-content: center;
     }
 
     .code-profiles {
         position: fixed;
-        top:0;
+        top: 0;
         left: 90%;
         padding-right: 2vw;
         flex-direction: column;
@@ -119,7 +119,7 @@ h2 {
 
     .code-profiles {
         position: fixed;
-        top:0;
+        top: 0;
         left: 95%;
         padding-right: 2vw;
         flex-direction: column;
@@ -139,8 +139,8 @@ h2 {
 footer {
     background-color: black;
     color: #ffffff;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(78,79,235,1) 100%);
+    background: rgb(7, 4, 25);
+    background: linear-gradient(180deg, rgba(7, 4, 25, 1) 28%, rgba(4, 188, 189, 1) 100%);
     padding: 2vw;
     display: flex;
     justify-content: center;
