@@ -126,9 +126,21 @@ h2 {
     }
 }
 
+.project-ss {
+    height: 30%;
+    overflow: hidden;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
     background-color: black;
     color: #ffffff;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(78,79,235,1) 100%);
     padding: 2vw;
     display: flex;
     justify-content: center;
