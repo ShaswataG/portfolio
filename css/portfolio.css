@@ -16,13 +16,11 @@ h2 {
 }
 
 .nav-animate {
-    /* text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue; */
     font-weight: 600;
 }
 
 .project-animate {
     box-shadow: 2px 2px 4px black, 0 0 2em lightblue, 0 0 0.4em darkblue;
-    /* box-shadow: 0 0 0 10px white; */
 }
 
 .project-url-animate {
