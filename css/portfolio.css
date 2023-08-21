@@ -15,6 +15,20 @@ h2 {
     padding: 0;
 }
 
+.nav-animate {
+    /* text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue; */
+    font-weight: 600;
+}
+
+.project-animate {
+    box-shadow: 2px 2px 4px black, 0 0 2em lightblue, 0 0 0.4em darkblue;
+    /* box-shadow: 0 0 0 10px white; */
+}
+
+.project-url-animate {
+    box-shadow: 1px 1px 2px black, 0 0 1em lightblue, 0 0 0.2em darkblue;
+}
+
 .profile-pic {
     float: right;
     padding-top: 50px;
@@ -51,7 +65,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 25px;
 }
 
 .card {
