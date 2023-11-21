@@ -6,6 +6,22 @@ h2 {
     margin-bottom: 2vh !important;
 }
 
+.nav-link {
+    color: white;
+}
+
+/* .nav-link-light {
+    color: black;
+} */
+
+.owner-name {
+    color: white;
+}
+/*
+.owner-name-light {
+    color: black;
+} */
+
 .sidebar {
     height: 100vh;
     background-color: black;
@@ -14,6 +30,16 @@ h2 {
     left: 0;
     padding: 0;
 }
+
+/* .sidebar-light-theme {
+    height: 100vh;
+    color: black !important;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+} */
 
 .nav-animate {
     font-weight: 600;
@@ -49,6 +75,11 @@ h2 {
     padding: 8vw 8vw;
     background-image: url("../images/endless-constellation.svg");
     /* background by SVGBackgrounds.com */
+}
+
+.content-light-theme {
+    background-image: url("../images/endless-constellation-light.svg");
+    color: black !important;
 }
 
 .title {
